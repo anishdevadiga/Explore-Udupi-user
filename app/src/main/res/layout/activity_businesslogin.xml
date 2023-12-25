@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".businesslogin"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/busiineslayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal" >
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/card_backgound"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:backgroundTint="@color/white">
+
+
+            <TextView
+                android:id="@+id/businesslogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/businessid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom__edittext"
+                android:drawableLeft="@drawable/baseline_confirmation_number_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/amarante"
+                android:hint="Business ID b  "
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:textColor="#304FFE"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="#304FFE"
+                android:paddingEnd="15dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/businessemail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom__edittext"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/amarante"
+                android:hint="Business Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:textColor="#304FFE"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="#304FFE"
+                android:paddingEnd="15dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/businesspassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom__edittext"
+                android:drawableStart="@drawable/baseline_key_24"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/amarante"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#304FFE"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="#304FFE"
+                android:longClickable="false"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/businessloginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/amaranth"
+
+                android:text="LOGIN"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

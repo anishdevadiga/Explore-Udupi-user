@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/alertdialog"
+
+    android:id="@+id/busdialog"
+    android:backgroundTint="@color/blue"
+    android:backgroundTintMode="add">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/busdialogbox"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/alertdialog"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bustimetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Udupi-Malpe"
+            android:textSize="25dp"
+            android:background="@drawable/blue_round"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:paddingBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 1-7:15AM"
+            android:textAlignment="center"
+            android:id="@+id/bus1"
+            app:layout_constraintTop_toBottomOf="@+id/bustimetitle"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 2-7:20AM"
+            android:textAlignment="center"
+            android:id="@+id/bus2"
+            app:layout_constraintTop_toBottomOf="@+id/bus1"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 3-7:35AM"
+            android:textAlignment="center"
+            android:id="@+id/bus3"
+            app:layout_constraintTop_toBottomOf="@+id/bus2"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 4-7:40AM"
+            android:textAlignment="center"
+            android:id="@+id/bus4"
+            app:layout_constraintTop_toBottomOf="@+id/bus3"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 1-8:15AM"
+            android:textAlignment="center"
+            android:id="@+id/bus5"
+            app:layout_constraintTop_toBottomOf="@+id/bus4"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus2-8:30AM"
+            android:textAlignment="center"
+            android:id="@+id/bus6"
+            app:layout_constraintTop_toBottomOf="@+id/bus5"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 3-8:55AM"
+            android:textAlignment="center"
+            android:id="@+id/bus7"
+            app:layout_constraintTop_toBottomOf="@+id/bus6"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus 4-9:20AM"
+            android:textAlignment="center"
+            android:id="@+id/bus8"
+            app:layout_constraintTop_toBottomOf="@+id/bus7"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/alatsi"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/alatsi"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bus8"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

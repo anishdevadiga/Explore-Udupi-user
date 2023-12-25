@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">project39</string>
+    <string name="app">Explore Udupi</string>
+    <string name="pattern">Password must contain atleast one lower case,uppercase,number and a special character,Password must be of 10 characters only</string>
+    <string name="businfo1">The Udupi City Bus Stand is a major transportation hub located in the city of Udupi.</string>
+    <string name="businfo2">It serves as a central point for various bus routes within the city and connecting to nearby towns and villages. </string>
+    <string name="businfo3">The Udupi City Bus Stand is situated in the heart of the city, typically in a central or easily accessible area.</string>
+    <string name="traininfo1">Udupi Railway Station is a major railway station located in Udupi district of Karnataka, India. It is situated on the Konkan Railway line, which connects Mangalore in Karnataka with Mumbai in Maharashtra. </string>
+    <string name="traininfo2">Udupi Railway Station is well-connected to various cities and towns across the country. It is served by numerous trains operated by Indian Railways, catering to both long-distance and local commuters.</string>
+    <string name="traininfo3">Some of the important trains that pass through or originate from Udupi Railway Station include the Matsyagandha Express, Mangalore-Mumbai Superfast Express, Kochuveli-Porbandar Express, and Karwar-Mumbai Matsyagandha Express.</string>
+    <string name="traininfo4">The station itself is equipped with basic passenger amenities such as waiting halls, ticket counters, refreshment stalls, and restroom facilities. Additionally, there are taxi and auto-rickshaw services available outside the station premises for local transportation.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tourist"
+    android:background="@color/blue">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+       android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/tourback"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/amaranth"
+        android:text="Tourist places"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingStart="50dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dashboard"
+        android:id="@+id/dash"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/recycletour"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

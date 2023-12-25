@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".businfo"
+    android:background="@color/blue">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/busback"/>
+    <ScrollView
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:contentDescription="@string/pattern">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alatsi"
+                android:text="Udupi City Bus Stand"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bus_stand"
+                app:shapeAppearanceOverlay="@style/picshape" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="@string/businfo1"
+                android:textAlignment="textStart"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alatsi"
+                android:text="@string/businfo2"
+                android:textAlignment="textStart"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alatsi"
+                android:text="@string/businfo3"
+                android:textAlignment="textStart"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Timings:-7:00AM-9:00PM"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Bus Timings"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Udupi-Manipal"
+                android:textAlignment="viewStart"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+                android:id="@+id/busum"
+                android:drawablePadding="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Udupi-Malpe"
+                android:textAlignment="viewStart"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+                android:id="@+id/bus2"
+                android:drawablePadding="5dp"
+
+
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Location"
+                android:id="@+id/buslocation"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+
+                app:cornerRadius="20dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2979FF"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/amaranth"
+        android:text="Explore Udupi"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingTop="35dp"
+        android:paddingStart="20dp"
+       />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bottomnavigationbar"
+        android:id="@+id/bottomnavigationbar"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/dashboard"
+        android:id="@+id/dash"
+
+
+        >
+        <GridLayout
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/grid"
+
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/card_backgound"
+                android:backgroundTint="@color/white"
+                android:id="@+id/tourist"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/tourist"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tourist Places"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingTop="20dp"
+                        android:fontFamily="@font/amaranth"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_backgound"
+                android:backgroundTint="@color/white"
+                android:id="@+id/transport"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/transport"
+                        android:adjustViewBounds="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transport"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingTop="20dp"
+                        android:fontFamily="@font/amaranth"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_backgound"
+                android:backgroundTint="@color/white"
+                android:id="@+id/hotels"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/hotel"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotels"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingTop="20dp"
+                        android:fontFamily="@font/amaranth"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/card_backgound"
+                android:backgroundTint="@color/white"
+                android:id="@+id/other"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/other"
+                        android:adjustViewBounds="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingTop="40dp"
+                        android:fontFamily="@font/amaranth"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

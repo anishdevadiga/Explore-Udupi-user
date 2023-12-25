@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutapp"
+    android:background="@color/blue">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:id="@+id/tourback"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/amaranth"
+        android:text="About the app"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingStart="50dp"
+        android:layout_marginTop="15dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:contentDescription="@string/pattern">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alatsi"
+                android:text="Explore Udupi"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/appicon"
+                app:shapeAppearanceOverlay="@style/picshape" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Explore Udupi is a mobile application designed to provide information and guidance about the city of Udupi in Karnataka, India. The app is designed to be a one-stop-shop for all tourists and visitors who are planning to explore Udupi and its surrounding areas.
+			The Explore Udupi app provides a comprehensive list of
+popular tourist attractions, including famous temples, beaches, and other sightseeing locations. The app also provides detailed information about local restaurants, cafes, and eateries, as well as nearby shopping centers and markets.
+"
+                android:textAlignment="viewStart"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
