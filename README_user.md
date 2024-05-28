@@ -16,5 +16,6 @@ Back end :- Google Firebase
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Explore Udupi User Interface](https://github.com/anishdevadiga/Explore-Udupi-user/assets/143006940/32192f66-b34a-4ccd-87db-b3e9102b74bf)
+
 
